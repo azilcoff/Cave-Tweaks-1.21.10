@@ -15,7 +15,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        valueLookupBuilder(ModBlockTags.INCORRECT_FOR_AMETHYST_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
+        valueLookupBuilder(ModBlockTags.INCORRECT_FOR_AMETHYST_TOOL).add();
     }
 }
