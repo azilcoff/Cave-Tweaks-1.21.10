@@ -5,19 +5,22 @@
 	"name": "Cave Tweaks",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"azilcoff"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/cavetweaks/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.azilcoff.cavetweaks.CaveTweaks"
 		],
+        "client": [
+          "net.azilcoff.cavetweaks.CaveTweaksClient"
+        ],
 		"fabric-datagen": [
 			"net.azilcoff.cavetweaks.CaveTweaksDataGenerator"
 		]
