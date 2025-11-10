@@ -1,7 +1,9 @@
 package net.azilcoff.cavetweaks.datagen;
 
+import net.azilcoff.cavetweaks.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -13,6 +15,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-
+        valueLookupBuilder(ModItemTags.AMETHYST_TOOL_MATERIALS)
+                .add(Items.AMETHYST_SHARD);
     }
 }

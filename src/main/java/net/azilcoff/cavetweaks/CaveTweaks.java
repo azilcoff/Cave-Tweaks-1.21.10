@@ -1,5 +1,8 @@
 package net.azilcoff.cavetweaks;
 
+import net.azilcoff.cavetweaks.item.ModItems;
+import net.azilcoff.cavetweaks.tag.ModBlockTags;
+import net.azilcoff.cavetweaks.tag.ModItemTags;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,8 @@ public class CaveTweaks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
+        ModItemTags.registerModItemTags();
+        ModBlockTags.registerModBlockTags();
 	}
 }
